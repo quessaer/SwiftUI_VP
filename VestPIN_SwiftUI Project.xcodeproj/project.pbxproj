@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AC3C007273EA13400F8F2BE /* VestPIN_SwiftUI_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C006273EA13400F8F2BE /* VestPIN_SwiftUI_ProjectApp.swift */; };
+		9AC3C009273EA13400F8F2BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C008273EA13400F8F2BE /* ContentView.swift */; };
+		9AC3C00B273EA13600F8F2BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C00A273EA13600F8F2BE /* Assets.xcassets */; };
+		9AC3C00E273EA13600F8F2BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C00D273EA13600F8F2BE /* Preview Assets.xcassets */; };
+		9AC3C018273EA17E00F8F2BE /* libVikieNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC3C015273EA17E00F8F2BE /* libVikieNative.a */; };
+		9AC3C019273EA17E00F8F2BE /* libVestPinLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC3C016273EA17E00F8F2BE /* libVestPinLib.a */; };
+		9AC3C01A273EA17E00F8F2BE /* libVestPINNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC3C017273EA17E00F8F2BE /* libVestPINNative.a */; };
+		9AC3C01C273EA18700F8F2BE /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC3C01B273EA18700F8F2BE /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9AC3C031273EA1A500F8F2BE /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC3C030273EA1A500F8F2BE /* libc++.tbd */; };
+		9AC3C033273EA1B200F8F2BE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC3C032273EA1B200F8F2BE /* CoreText.framework */; };
+		9AC3C035273EA1B900F8F2BE /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC3C034273EA1B800F8F2BE /* CoreImage.framework */; };
+		9AC3C037273EA1C000F8F2BE /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC3C036273EA1C000F8F2BE /* libxml2.tbd */; };
+		9AC3C039273EA1C800F8F2BE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC3C038273EA1C800F8F2BE /* QuartzCore.framework */; };
+		9AC3C03B273EA1CF00F8F2BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC3C03A273EA1CF00F8F2BE /* CoreGraphics.framework */; };
+		9AC3C03D273EA1D600F8F2BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC3C03C273EA1D600F8F2BE /* UIKit.framework */; };
+		9AC3C05A273EA40B00F8F2BE /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C055273EA40B00F8F2BE /* Network.m */; };
+		9AC3C05B273EA40B00F8F2BE /* SecondAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C058273EA40B00F8F2BE /* SecondAuth.m */; };
+		9AC3C060273EAC9800F8F2BE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C05F273EAC9800F8F2BE /* RegisterView.swift */; };
+		9AC3C062273EAD3000F8F2BE /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C061273EAD3000F8F2BE /* CategoryHome.swift */; };
+		9AC3C065273EAEC600F8F2BE /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C064273EAEC600F8F2BE /* UserList.swift */; };
+		9AC3C079274529DB00F8F2BE /* number_9.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C067274529DB00F8F2BE /* number_9.svg */; };
+		9AC3C07A274529DB00F8F2BE /* number_8.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C068274529DB00F8F2BE /* number_8.svg */; };
+		9AC3C07B274529DB00F8F2BE /* backspace-btn.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C069274529DB00F8F2BE /* backspace-btn.svg */; };
+		9AC3C07C274529DB00F8F2BE /* ok_btn.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C06A274529DB00F8F2BE /* ok_btn.svg */; };
+		9AC3C07D274529DB00F8F2BE /* title.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C06B274529DB00F8F2BE /* title.svg */; };
+		9AC3C07E274529DB00F8F2BE /* safe_icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C06C274529DB00F8F2BE /* safe_icon.svg */; };
+		9AC3C07F274529DB00F8F2BE /* title_close-btn.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C06D274529DB00F8F2BE /* title_close-btn.svg */; };
+		9AC3C080274529DB00F8F2BE /* number_5.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C06E274529DB00F8F2BE /* number_5.svg */; };
+		9AC3C081274529DB00F8F2BE /* number_4.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C06F274529DB00F8F2BE /* number_4.svg */; };
+		9AC3C082274529DB00F8F2BE /* rearrangement_btn.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C070274529DB00F8F2BE /* rearrangement_btn.svg */; };
+		9AC3C083274529DB00F8F2BE /* number_6.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C071274529DB00F8F2BE /* number_6.svg */; };
+		9AC3C084274529DB00F8F2BE /* number_7.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C072274529DB00F8F2BE /* number_7.svg */; };
+		9AC3C085274529DB00F8F2BE /* number_3.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C073274529DB00F8F2BE /* number_3.svg */; };
+		9AC3C086274529DB00F8F2BE /* special.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C074274529DB00F8F2BE /* special.svg */; };
+		9AC3C087274529DB00F8F2BE /* number_2.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C075274529DB00F8F2BE /* number_2.svg */; };
+		9AC3C088274529DB00F8F2BE /* number_0.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C076274529DB00F8F2BE /* number_0.svg */; };
+		9AC3C089274529DB00F8F2BE /* number_1.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C077274529DB00F8F2BE /* number_1.svg */; };
+		9AC3C08A274529DB00F8F2BE /* safe_icon_app.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C078274529DB00F8F2BE /* safe_icon_app.svg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9AC3C003273EA13400F8F2BE /* VestPIN_SwiftUI Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VestPIN_SwiftUI Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC3C006273EA13400F8F2BE /* VestPIN_SwiftUI_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VestPIN_SwiftUI_ProjectApp.swift; sourceTree = "<group>"; };
+		9AC3C008273EA13400F8F2BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9AC3C00A273EA13600F8F2BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AC3C00D273EA13600F8F2BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9AC3C015273EA17E00F8F2BE /* libVikieNative.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVikieNative.a; path = lib/libVikieNative.a; sourceTree = "<group>"; };
+		9AC3C016273EA17E00F8F2BE /* libVestPinLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVestPinLib.a; path = lib/libVestPinLib.a; sourceTree = "<group>"; };
+		9AC3C017273EA17E00F8F2BE /* libVestPINNative.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVestPINNative.a; path = lib/libVestPINNative.a; sourceTree = "<group>"; };
+		9AC3C01B273EA18700F8F2BE /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = "thridPartyLib/CocoaLumberjack-2.2.0/CocoaLumberjack.framework"; sourceTree = "<group>"; };
+		9AC3C030273EA1A500F8F2BE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		9AC3C032273EA1B200F8F2BE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		9AC3C034273EA1B800F8F2BE /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9AC3C036273EA1C000F8F2BE /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		9AC3C038273EA1C800F8F2BE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9AC3C03A273EA1CF00F8F2BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9AC3C03C273EA1D600F8F2BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9AC3C055273EA40B00F8F2BE /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		9AC3C056273EA40B00F8F2BE /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		9AC3C058273EA40B00F8F2BE /* SecondAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondAuth.m; sourceTree = "<group>"; };
+		9AC3C059273EA40B00F8F2BE /* SecondAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondAuth.h; sourceTree = "<group>"; };
+		9AC3C05C273EA42C00F8F2BE /* VestPIN_SwiftUI Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VestPIN_SwiftUI Project-Bridging-Header.h"; sourceTree = "<group>"; };
+		9AC3C05D273EA74200F8F2BE /* VestPIN-SwiftUI-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "VestPIN-SwiftUI-Project-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9AC3C05F273EAC9800F8F2BE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		9AC3C061273EAD3000F8F2BE /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		9AC3C064273EAEC600F8F2BE /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		9AC3C067274529DB00F8F2BE /* number_9.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = number_9.svg; sourceTree = "<group>"; };
+		9AC3C068274529DB00F8F2BE /* number_8.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = number_8.svg; sourceTree = "<group>"; };
+		9AC3C069274529DB00F8F2BE /* backspace-btn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "backspace-btn.svg"; sourceTree = "<group>"; };
+		9AC3C06A274529DB00F8F2BE /* ok_btn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ok_btn.svg; sourceTree = "<group>"; };
+		9AC3C06B274529DB00F8F2BE /* title.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = title.svg; sourceTree = "<group>"; };
+		9AC3C06C274529DB00F8F2BE /* safe_icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = safe_icon.svg; sourceTree = "<group>"; };
+		9AC3C06D274529DB00F8F2BE /* title_close-btn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "title_close-btn.svg"; sourceTree = "<group>"; };
+		9AC3C06E274529DB00F8F2BE /* number_5.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = number_5.svg; sourceTree = "<group>"; };
+		9AC3C06F274529DB00F8F2BE /* number_4.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = number_4.svg; sourceTree = "<group>"; };
+		9AC3C070274529DB00F8F2BE /* rearrangement_btn.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = rearrangement_btn.svg; sourceTree = "<group>"; };
+		9AC3C071274529DB00F8F2BE /* number_6.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = number_6.svg; sourceTree = "<group>"; };
+		9AC3C072274529DB00F8F2BE /* number_7.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = number_7.svg; sourceTree = "<group>"; };
+		9AC3C073274529DB00F8F2BE /* number_3.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = number_3.svg; sourceTree = "<group>"; };
+		9AC3C074274529DB00F8F2BE /* special.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = special.svg; sourceTree = "<group>"; };
+		9AC3C075274529DB00F8F2BE /* number_2.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = number_2.svg; sourceTree = "<group>"; };
+		9AC3C076274529DB00F8F2BE /* number_0.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = number_0.svg; sourceTree = "<group>"; };
+		9AC3C077274529DB00F8F2BE /* number_1.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = number_1.svg; sourceTree = "<group>"; };
+		9AC3C078274529DB00F8F2BE /* safe_icon_app.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = safe_icon_app.svg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AC3C000273EA13400F8F2BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC3C03D273EA1D600F8F2BE /* UIKit.framework in Frameworks */,
+				9AC3C03B273EA1CF00F8F2BE /* CoreGraphics.framework in Frameworks */,
+				9AC3C039273EA1C800F8F2BE /* QuartzCore.framework in Frameworks */,
+				9AC3C037273EA1C000F8F2BE /* libxml2.tbd in Frameworks */,
+				9AC3C035273EA1B900F8F2BE /* CoreImage.framework in Frameworks */,
+				9AC3C033273EA1B200F8F2BE /* CoreText.framework in Frameworks */,
+				9AC3C031273EA1A500F8F2BE /* libc++.tbd in Frameworks */,
+				9AC3C018273EA17E00F8F2BE /* libVikieNative.a in Frameworks */,
+				9AC3C019273EA17E00F8F2BE /* libVestPinLib.a in Frameworks */,
+				9AC3C01A273EA17E00F8F2BE /* libVestPINNative.a in Frameworks */,
+				9AC3C01C273EA18700F8F2BE /* CocoaLumberjack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AC3BFFA273EA13400F8F2BE = {
+			isa = PBXGroup;
+			children = (
+				9AC3C05C273EA42C00F8F2BE /* VestPIN_SwiftUI Project-Bridging-Header.h */,
+				9AC3C005273EA13400F8F2BE /* VestPIN_SwiftUI Project */,
+				9AC3C004273EA13400F8F2BE /* Products */,
+				9AC3C014273EA17D00F8F2BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9AC3C004273EA13400F8F2BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AC3C003273EA13400F8F2BE /* VestPIN_SwiftUI Project.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AC3C005273EA13400F8F2BE /* VestPIN_SwiftUI Project */ = {
+			isa = PBXGroup;
+			children = (
+				9AC3C05D273EA74200F8F2BE /* VestPIN-SwiftUI-Project-Info.plist */,
+				9AC3C053273EA3A200F8F2BE /* Resources */,
+				9AC3C052273EA39800F8F2BE /* Model */,
+				9AC3C051273EA38200F8F2BE /* Views */,
+				9AC3C063273EAE9100F8F2BE /* UserLists */,
+				9AC3C006273EA13400F8F2BE /* VestPIN_SwiftUI_ProjectApp.swift */,
+				9AC3C00A273EA13600F8F2BE /* Assets.xcassets */,
+				9AC3C00C273EA13600F8F2BE /* Preview Content */,
+			);
+			path = "VestPIN_SwiftUI Project";
+			sourceTree = "<group>";
+		};
+		9AC3C00C273EA13600F8F2BE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9AC3C00D273EA13600F8F2BE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9AC3C014273EA17D00F8F2BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AC3C03C273EA1D600F8F2BE /* UIKit.framework */,
+				9AC3C03A273EA1CF00F8F2BE /* CoreGraphics.framework */,
+				9AC3C038273EA1C800F8F2BE /* QuartzCore.framework */,
+				9AC3C036273EA1C000F8F2BE /* libxml2.tbd */,
+				9AC3C034273EA1B800F8F2BE /* CoreImage.framework */,
+				9AC3C032273EA1B200F8F2BE /* CoreText.framework */,
+				9AC3C030273EA1A500F8F2BE /* libc++.tbd */,
+				9AC3C01B273EA18700F8F2BE /* CocoaLumberjack.framework */,
+				9AC3C016273EA17E00F8F2BE /* libVestPinLib.a */,
+				9AC3C017273EA17E00F8F2BE /* libVestPINNative.a */,
+				9AC3C015273EA17E00F8F2BE /* libVikieNative.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AC3C051273EA38200F8F2BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AC3C008273EA13400F8F2BE /* ContentView.swift */,
+				9AC3C05E273EAC7000F8F2BE /* Categories */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9AC3C052273EA39800F8F2BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9AC3C053273EA3A200F8F2BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9AC3C066274529DB00F8F2BE /* SVGFile */,
+				9AC3C054273EA40B00F8F2BE /* Network */,
+				9AC3C057273EA40B00F8F2BE /* SecondAuth */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9AC3C054273EA40B00F8F2BE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9AC3C055273EA40B00F8F2BE /* Network.m */,
+				9AC3C056273EA40B00F8F2BE /* Network.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9AC3C057273EA40B00F8F2BE /* SecondAuth */ = {
+			isa = PBXGroup;
+			children = (
+				9AC3C058273EA40B00F8F2BE /* SecondAuth.m */,
+				9AC3C059273EA40B00F8F2BE /* SecondAuth.h */,
+			);
+			path = SecondAuth;
+			sourceTree = "<group>";
+		};
+		9AC3C05E273EAC7000F8F2BE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9AC3C061273EAD3000F8F2BE /* CategoryHome.swift */,
+				9AC3C05F273EAC9800F8F2BE /* RegisterView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		9AC3C063273EAE9100F8F2BE /* UserLists */ = {
+			isa = PBXGroup;
+			children = (
+				9AC3C064273EAEC600F8F2BE /* UserList.swift */,
+			);
+			path = UserLists;
+			sourceTree = "<group>";
+		};
+		9AC3C066274529DB00F8F2BE /* SVGFile */ = {
+			isa = PBXGroup;
+			children = (
+				9AC3C067274529DB00F8F2BE /* number_9.svg */,
+				9AC3C068274529DB00F8F2BE /* number_8.svg */,
+				9AC3C069274529DB00F8F2BE /* backspace-btn.svg */,
+				9AC3C06A274529DB00F8F2BE /* ok_btn.svg */,
+				9AC3C06B274529DB00F8F2BE /* title.svg */,
+				9AC3C06C274529DB00F8F2BE /* safe_icon.svg */,
+				9AC3C06D274529DB00F8F2BE /* title_close-btn.svg */,
+				9AC3C06E274529DB00F8F2BE /* number_5.svg */,
+				9AC3C06F274529DB00F8F2BE /* number_4.svg */,
+				9AC3C070274529DB00F8F2BE /* rearrangement_btn.svg */,
+				9AC3C071274529DB00F8F2BE /* number_6.svg */,
+				9AC3C072274529DB00F8F2BE /* number_7.svg */,
+				9AC3C073274529DB00F8F2BE /* number_3.svg */,
+				9AC3C074274529DB00F8F2BE /* special.svg */,
+				9AC3C075274529DB00F8F2BE /* number_2.svg */,
+				9AC3C076274529DB00F8F2BE /* number_0.svg */,
+				9AC3C077274529DB00F8F2BE /* number_1.svg */,
+				9AC3C078274529DB00F8F2BE /* safe_icon_app.svg */,
+			);
+			path = SVGFile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AC3C002273EA13400F8F2BE /* VestPIN_SwiftUI Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC3C011273EA13600F8F2BE /* Build configuration list for PBXNativeTarget "VestPIN_SwiftUI Project" */;
+			buildPhases = (
+				9AC3BFFF273EA13400F8F2BE /* Sources */,
+				9AC3C000273EA13400F8F2BE /* Frameworks */,
+				9AC3C001273EA13400F8F2BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VestPIN_SwiftUI Project";
+			productName = "VestPIN_SwiftUI Project";
+			productReference = 9AC3C003273EA13400F8F2BE /* VestPIN_SwiftUI Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AC3BFFB273EA13400F8F2BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					9AC3C002273EA13400F8F2BE = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 9AC3BFFE273EA13400F8F2BE /* Build configuration list for PBXProject "VestPIN_SwiftUI Project" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AC3BFFA273EA13400F8F2BE;
+			productRefGroup = 9AC3C004273EA13400F8F2BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AC3C002273EA13400F8F2BE /* VestPIN_SwiftUI Project */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AC3C001273EA13400F8F2BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC3C07B274529DB00F8F2BE /* backspace-btn.svg in Resources */,
+				9AC3C082274529DB00F8F2BE /* rearrangement_btn.svg in Resources */,
+				9AC3C083274529DB00F8F2BE /* number_6.svg in Resources */,
+				9AC3C080274529DB00F8F2BE /* number_5.svg in Resources */,
+				9AC3C081274529DB00F8F2BE /* number_4.svg in Resources */,
+				9AC3C07F274529DB00F8F2BE /* title_close-btn.svg in Resources */,
+				9AC3C087274529DB00F8F2BE /* number_2.svg in Resources */,
+				9AC3C085274529DB00F8F2BE /* number_3.svg in Resources */,
+				9AC3C07D274529DB00F8F2BE /* title.svg in Resources */,
+				9AC3C084274529DB00F8F2BE /* number_7.svg in Resources */,
+				9AC3C08A274529DB00F8F2BE /* safe_icon_app.svg in Resources */,
+				9AC3C07E274529DB00F8F2BE /* safe_icon.svg in Resources */,
+				9AC3C086274529DB00F8F2BE /* special.svg in Resources */,
+				9AC3C088274529DB00F8F2BE /* number_0.svg in Resources */,
+				9AC3C089274529DB00F8F2BE /* number_1.svg in Resources */,
+				9AC3C079274529DB00F8F2BE /* number_9.svg in Resources */,
+				9AC3C00E273EA13600F8F2BE /* Preview Assets.xcassets in Resources */,
+				9AC3C07C274529DB00F8F2BE /* ok_btn.svg in Resources */,
+				9AC3C07A274529DB00F8F2BE /* number_8.svg in Resources */,
+				9AC3C00B273EA13600F8F2BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AC3BFFF273EA13400F8F2BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC3C009273EA13400F8F2BE /* ContentView.swift in Sources */,
+				9AC3C060273EAC9800F8F2BE /* RegisterView.swift in Sources */,
+				9AC3C05B273EA40B00F8F2BE /* SecondAuth.m in Sources */,
+				9AC3C05A273EA40B00F8F2BE /* Network.m in Sources */,
+				9AC3C062273EAD3000F8F2BE /* CategoryHome.swift in Sources */,
+				9AC3C065273EAEC600F8F2BE /* UserList.swift in Sources */,
+				9AC3C007273EA13400F8F2BE /* VestPIN_SwiftUI_ProjectApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9AC3C00F273EA13600F8F2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AC3C010273EA13600F8F2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AC3C012273EA13600F8F2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VestPIN_SwiftUI Project/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Q7RNHANG9;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/thridPartyLib/CocoaLumberjack-2.2.0",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				INFOPLIST_FILE = "VestPIN-SwiftUI-Project-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jtkim.VestPIN-SwiftUI-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/j.t.kim/Developer/VestPinNative_Swift/VestPIN_SwiftUI Project/VestPIN_SwiftUI Project-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AC3C013273EA13600F8F2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VestPIN_SwiftUI Project/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Q7RNHANG9;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/thridPartyLib/CocoaLumberjack-2.2.0",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/include";
+				INFOPLIST_FILE = "VestPIN-SwiftUI-Project-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jtkim.VestPIN-SwiftUI-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/j.t.kim/Developer/VestPinNative_Swift/VestPIN_SwiftUI Project/VestPIN_SwiftUI Project-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AC3BFFE273EA13400F8F2BE /* Build configuration list for PBXProject "VestPIN_SwiftUI Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC3C00F273EA13600F8F2BE /* Debug */,
+				9AC3C010273EA13600F8F2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC3C011273EA13600F8F2BE /* Build configuration list for PBXNativeTarget "VestPIN_SwiftUI Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC3C012273EA13600F8F2BE /* Debug */,
+				9AC3C013273EA13600F8F2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AC3BFFB273EA13400F8F2BE /* Project object */;
+}
