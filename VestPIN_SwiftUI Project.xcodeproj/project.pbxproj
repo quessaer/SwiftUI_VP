@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A2D1B2E274E6E1100867B41 /* PinLoginView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2D1B2D274E6E1100867B41 /* PinLoginView2.swift */; };
+		9A622086274B2CDD009A498D /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A622085274B2CDD009A498D /* TestView.swift */; };
+		9A63855E27490BC7006CB48E /* BankAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63855D27490BC7006CB48E /* BankAccountView.swift */; };
+		9A6BC5CB274A3C42008CE828 /* PinLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6BC5CA274A3C42008CE828 /* PinLoginView.swift */; };
+		9A6BC5CD274A3C57008CE828 /* PatternLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6BC5CC274A3C57008CE828 /* PatternLoginView.swift */; };
+		9A6BC5CF274A4C06008CE828 /* AccountPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6BC5CE274A4C06008CE828 /* AccountPageView.swift */; };
+		9A6BC5D1274A51B5008CE828 /* AccountHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6BC5D0274A51B5008CE828 /* AccountHistoryView.swift */; };
+		9A7928142748C4F000DE582D /* ChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7928132748C4F000DE582D /* ChangeView.swift */; };
+		9A7928162748C4FE00DE582D /* RemoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7928152748C4FE00DE582D /* RemoveView.swift */; };
 		9AC3C007273EA13400F8F2BE /* VestPIN_SwiftUI_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C006273EA13400F8F2BE /* VestPIN_SwiftUI_ProjectApp.swift */; };
 		9AC3C009273EA13400F8F2BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C008273EA13400F8F2BE /* ContentView.swift */; };
 		9AC3C00B273EA13600F8F2BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C00A273EA13600F8F2BE /* Assets.xcassets */; };
@@ -45,9 +54,20 @@
 		9AC3C088274529DB00F8F2BE /* number_0.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C076274529DB00F8F2BE /* number_0.svg */; };
 		9AC3C089274529DB00F8F2BE /* number_1.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C077274529DB00F8F2BE /* number_1.svg */; };
 		9AC3C08A274529DB00F8F2BE /* safe_icon_app.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9AC3C078274529DB00F8F2BE /* safe_icon_app.svg */; };
+		9AC3C0FB2748A19700F8F2BE /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C0FA2748A19700F8F2BE /* OptionView.swift */; };
+		9AC3C0FD2748ADD500F8F2BE /* LoginTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3C0FC2748ADD500F8F2BE /* LoginTypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A2D1B2D274E6E1100867B41 /* PinLoginView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinLoginView2.swift; sourceTree = "<group>"; };
+		9A622085274B2CDD009A498D /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		9A63855D27490BC7006CB48E /* BankAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountView.swift; sourceTree = "<group>"; };
+		9A6BC5CA274A3C42008CE828 /* PinLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinLoginView.swift; sourceTree = "<group>"; };
+		9A6BC5CC274A3C57008CE828 /* PatternLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternLoginView.swift; sourceTree = "<group>"; };
+		9A6BC5CE274A4C06008CE828 /* AccountPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPageView.swift; sourceTree = "<group>"; };
+		9A6BC5D0274A51B5008CE828 /* AccountHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHistoryView.swift; sourceTree = "<group>"; };
+		9A7928132748C4F000DE582D /* ChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeView.swift; sourceTree = "<group>"; };
+		9A7928152748C4FE00DE582D /* RemoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveView.swift; sourceTree = "<group>"; };
 		9AC3C003273EA13400F8F2BE /* VestPIN_SwiftUI Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VestPIN_SwiftUI Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC3C006273EA13400F8F2BE /* VestPIN_SwiftUI_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VestPIN_SwiftUI_ProjectApp.swift; sourceTree = "<group>"; };
 		9AC3C008273EA13400F8F2BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,7 +88,6 @@
 		9AC3C056273EA40B00F8F2BE /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		9AC3C058273EA40B00F8F2BE /* SecondAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondAuth.m; sourceTree = "<group>"; };
 		9AC3C059273EA40B00F8F2BE /* SecondAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondAuth.h; sourceTree = "<group>"; };
-		9AC3C05C273EA42C00F8F2BE /* VestPIN_SwiftUI Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VestPIN_SwiftUI Project-Bridging-Header.h"; sourceTree = "<group>"; };
 		9AC3C05D273EA74200F8F2BE /* VestPIN-SwiftUI-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "VestPIN-SwiftUI-Project-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9AC3C05F273EAC9800F8F2BE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		9AC3C061273EAD3000F8F2BE /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
@@ -91,6 +110,9 @@
 		9AC3C076274529DB00F8F2BE /* number_0.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = number_0.svg; sourceTree = "<group>"; };
 		9AC3C077274529DB00F8F2BE /* number_1.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = number_1.svg; sourceTree = "<group>"; };
 		9AC3C078274529DB00F8F2BE /* safe_icon_app.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = safe_icon_app.svg; sourceTree = "<group>"; };
+		9AC3C0F927489DE800F8F2BE /* VestPIN_SwiftUI Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VestPIN_SwiftUI Project-Bridging-Header.h"; sourceTree = "<group>"; };
+		9AC3C0FA2748A19700F8F2BE /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
+		9AC3C0FC2748ADD500F8F2BE /* LoginTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +137,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A6BC5C9274A3BFF008CE828 /* LoginViews */ = {
+			isa = PBXGroup;
+			children = (
+				9A6BC5CA274A3C42008CE828 /* PinLoginView.swift */,
+				9A2D1B2D274E6E1100867B41 /* PinLoginView2.swift */,
+				9A6BC5CC274A3C57008CE828 /* PatternLoginView.swift */,
+			);
+			path = LoginViews;
+			sourceTree = "<group>";
+		};
+		9A7928122748C4B400DE582D /* VestPINViews */ = {
+			isa = PBXGroup;
+			children = (
+				9AC3C05F273EAC9800F8F2BE /* RegisterView.swift */,
+				9A7928132748C4F000DE582D /* ChangeView.swift */,
+				9A7928152748C4FE00DE582D /* RemoveView.swift */,
+			);
+			path = VestPINViews;
+			sourceTree = "<group>";
+		};
 		9AC3BFFA273EA13400F8F2BE = {
 			isa = PBXGroup;
 			children = (
-				9AC3C05C273EA42C00F8F2BE /* VestPIN_SwiftUI Project-Bridging-Header.h */,
+				9AC3C0F927489DE800F8F2BE /* VestPIN_SwiftUI Project-Bridging-Header.h */,
 				9AC3C005273EA13400F8F2BE /* VestPIN_SwiftUI Project */,
 				9AC3C004273EA13400F8F2BE /* Products */,
 				9AC3C014273EA17D00F8F2BE /* Frameworks */,
@@ -179,6 +221,7 @@
 			children = (
 				9AC3C008273EA13400F8F2BE /* ContentView.swift */,
 				9AC3C05E273EAC7000F8F2BE /* Categories */,
+				9A6BC5C9274A3BFF008CE828 /* LoginViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,7 +265,13 @@
 			isa = PBXGroup;
 			children = (
 				9AC3C061273EAD3000F8F2BE /* CategoryHome.swift */,
-				9AC3C05F273EAC9800F8F2BE /* RegisterView.swift */,
+				9AC3C0FA2748A19700F8F2BE /* OptionView.swift */,
+				9AC3C0FC2748ADD500F8F2BE /* LoginTypeView.swift */,
+				9A7928122748C4B400DE582D /* VestPINViews */,
+				9A63855D27490BC7006CB48E /* BankAccountView.swift */,
+				9A6BC5CE274A4C06008CE828 /* AccountPageView.swift */,
+				9A6BC5D0274A51B5008CE828 /* AccountHistoryView.swift */,
+				9A622085274B2CDD009A498D /* TestView.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -348,13 +397,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A63855E27490BC7006CB48E /* BankAccountView.swift in Sources */,
+				9A6BC5CF274A4C06008CE828 /* AccountPageView.swift in Sources */,
+				9A6BC5CD274A3C57008CE828 /* PatternLoginView.swift in Sources */,
+				9A2D1B2E274E6E1100867B41 /* PinLoginView2.swift in Sources */,
 				9AC3C009273EA13400F8F2BE /* ContentView.swift in Sources */,
+				9A6BC5CB274A3C42008CE828 /* PinLoginView.swift in Sources */,
 				9AC3C060273EAC9800F8F2BE /* RegisterView.swift in Sources */,
 				9AC3C05B273EA40B00F8F2BE /* SecondAuth.m in Sources */,
 				9AC3C05A273EA40B00F8F2BE /* Network.m in Sources */,
+				9A622086274B2CDD009A498D /* TestView.swift in Sources */,
+				9A7928162748C4FE00DE582D /* RemoveView.swift in Sources */,
+				9A7928142748C4F000DE582D /* ChangeView.swift in Sources */,
 				9AC3C062273EAD3000F8F2BE /* CategoryHome.swift in Sources */,
+				9AC3C0FD2748ADD500F8F2BE /* LoginTypeView.swift in Sources */,
 				9AC3C065273EAEC600F8F2BE /* UserList.swift in Sources */,
+				9A6BC5D1274A51B5008CE828 /* AccountHistoryView.swift in Sources */,
 				9AC3C007273EA13400F8F2BE /* VestPIN_SwiftUI_ProjectApp.swift in Sources */,
+				9AC3C0FB2748A19700F8F2BE /* OptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +571,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jtkim.VestPIN-SwiftUI-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/j.t.kim/Developer/VestPinNative_Swift/VestPIN_SwiftUI Project/VestPIN_SwiftUI Project-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/j.t.kim/Developer/VestPinNative_Swift/VestPIN_SwiftUI_Project/VestPIN_SwiftUI Project-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -552,7 +612,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jtkim.VestPIN-SwiftUI-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/j.t.kim/Developer/VestPinNative_Swift/VestPIN_SwiftUI Project/VestPIN_SwiftUI Project-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/j.t.kim/Developer/VestPinNative_Swift/VestPIN_SwiftUI_Project/VestPIN_SwiftUI Project-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

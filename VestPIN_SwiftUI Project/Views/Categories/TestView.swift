@@ -9,7 +9,10 @@ import SwiftUI
 
 struct TestView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("popover 테스트")
+            Text("공동인증서 로그인 혹은 아이디/패스워드 눌렀을 시 보이는 뷰")
+        }
     }
 }
 

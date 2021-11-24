@@ -5,6 +5,8 @@
 //  Created by yettie on 2021/01/22.
 //
 
+// 코드 적용 시 빌드가 너무 느려지는 것으로 보임(2021/11/22)
+
 #import "Network.h"
 
 #define VPN_ALLOW_TRUST_SERVER_CERTIFICATE @"Always Allow VestPIN SSl Certificate"
@@ -21,19 +23,19 @@
 }
 
 -(NSMutableURLRequest *) makeRequest:(NSString *)url withJsonBody:(NSData *)jsonBody{
-    
+
     NSURL *servletURL=[NSURL URLWithString:url];
     NSMutableURLRequest *request=[[NSMutableURLRequest alloc]init];
-    
+
     NSDictionary *cookieProperties=[NSDictionary dictionaryWithObjectsAndKeys:
                                     servletURL.host,NSHTTPCookieDomain,
                                     servletURL.path,NSHTTPCookiePath,
                                     nil];
-    
+
     NSHTTPCookie *cookie=[NSHTTPCookie cookieWithProperties:cookieProperties];
     NSArray* cookieArray=[NSArray arrayWithObjects:cookie,nil];
     NSDictionary *header=[NSHTTPCookie requestHeaderFieldsWithCookies:cookieArray];
-    
+
     [request setHTTPMethod:@"POST"];
     //넣으면 에러...
     //[request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
@@ -47,13 +49,13 @@
 -(void)sendServlet:(NSMutableURLRequest *)urlRequest
           callback:(void (^)(int code,
                              NSString  *jsonStr))networkCb{
-    
+
     NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
-    
+
     sessionConfig.requestCachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
-    
+
     NSURLSession *_session = [NSURLSession sessionWithConfiguration:sessionConfig delegate:self delegateQueue:[NSOperationQueue mainQueue]];
-    
+
     NSURLSessionDataTask *_dataTask = [_session dataTaskWithRequest:urlRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         int result = 0;
         NSString *_jsonStr = nil;
@@ -99,10 +101,10 @@
 
 -(void)URLSession:(NSURLSession *)session didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler {
     NSBundle* mainBundle = [NSBundle mainBundle];
-    
+
     BOOL trust = [[mainBundle objectForInfoDictionaryKey:VPN_ALLOW_TRUST_SERVER_CERTIFICATE] boolValue];
     SecTrustRef serverTrust = challenge.protectionSpace.serverTrust;
-    
+
     // Set SSL policies for domain name check
     NSMutableArray *policies = [NSMutableArray array];
     [policies addObject:(__bridge_transfer id)SecPolicyCreateSSL(true, (__bridge CFStringRef)challenge.protectionSpace.host)];
@@ -111,7 +113,7 @@
     SecTrustResultType result;
     SecTrustEvaluate(serverTrust, &result);
     NSURLCredential *credential;
-    
+
     if([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]){
         //plist  에서 읽어옴
         if(trust){
